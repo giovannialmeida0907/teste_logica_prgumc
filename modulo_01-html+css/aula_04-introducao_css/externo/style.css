@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap');
+
+
+*{
+    /*tirar margem da pag.*/
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: azure;
+}
+
+header {
+    background-color: antiquewhite;
+}
+
+main{
+    font-size: 16px;
+
+}
+
+p{
+    .playwrite-mx-guides-regular {
+        font-family: "Playwrite MX Guides", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      color: rgb(74, 199, 74);
+      
+}
+
+h1,h2{
+    text-align: center;
+}
+
+a{
+    
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
