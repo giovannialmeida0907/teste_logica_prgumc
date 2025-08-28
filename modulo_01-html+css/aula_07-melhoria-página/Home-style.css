@@ -1,0 +1,61 @@
+@import url("cores.css");
+
+body{
+    background-color: var(--color-fundo-body-);
+}
+
+main{
+    margin-top: 100px;
+    text-align: center;
+    background-color: var(--color-main-);
+}
+
+
+main>h2{
+    text-align: center;
+}
+
+.card-receita{
+    border-radius: 15px;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.109) ;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: var(--color-main-);
+}
+
+.card-receita:hover{
+    transform: scale(1.1);
+}
+
+.card-receita>img{
+    width: 100%;
+    height: 190px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.card-receita>h3{
+    margin: 15px 0px;
+    font-size: 1.2em;
+    opacity: 0.90;
+}
+
+.btn-receita{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: var( --color-letars-link-);
+    background-color: var(--color-header-inicial);
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.btn-receita:hover{
+    transform: translate(2px, -2px);
+    background-color: var(--color-header-final);
+}
