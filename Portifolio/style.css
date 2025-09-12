@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: aliceblue;
+}
+
+
+header>h1{
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+
+header>a{
+    text-align: center;
+
+}
+
