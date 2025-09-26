@@ -13,7 +13,7 @@ for(let i = 0; i <listaProdutos.length; i++){
       console.log(listaProdutos[i]);
 }
 
-//percorrer array(lista) com (forEach)?
+//percorrer array(lista) com (forEach)?                                                                                                                                                                                                                                                                                                         
 listaProdutos.forEach((produto) =>[
     console.log(produto)
     
