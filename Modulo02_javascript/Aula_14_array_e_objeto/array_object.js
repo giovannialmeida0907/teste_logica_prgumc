@@ -25,6 +25,13 @@ listaProdutos.forEach((produtos ) =>{
 // format?  (formatar o resultado da busca estetica)
 listaProdutos.forEach((produtos ) =>{
 
-    console.log(`0 ${produtos.nome} da ${produtos.fabricante} é R$ ${produtos.Valor}`)
+    console.log(`0 ${produtos.nome} da ${produtos.Fabricante} é R$ ${produtos.Valor}`)
     
 })
+
+
+//filtros para os array 
+
+let listaProdutoscaros = listaProdutos.filter(produtos => produtos.Valor > 2000)
+
+console.log(listaProdutoscaros);
