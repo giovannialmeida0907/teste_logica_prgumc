@@ -9,17 +9,23 @@ cep.addEventListener("change", (evento) => {
 })
 
 async function busca_cep (cep_usuario){
+
+    let erro_cep = document.getElementById("erro")
    
     try{
     
         let consulta_cep = await fetch(`https://viacep.com.br/ws/${cep_usuario}/json`)
         let consulta_cep_json = await consulta_cep.json()
         
-        
+        if (consulta_cep.erro){
+            throw error ("cep Inexistente")
+        }
+
+        preenche_campo(consulta_cep_json)
     }
 
     catch {
-
+        erro_cep.innerHTML = "CEP Inválido, tente novamente"
     }
     
 }
