@@ -26,8 +26,10 @@ async function busca_cep (cep_usuario){
 
     catch {
         erro_cep.innerHTML = "CEP Inválido, tente novamente"
+        apagar_campo()
     }
     
+   
 }
 
 function preenche_campo(cep_json){
@@ -45,5 +47,20 @@ function preenche_campo(cep_json){
     bairro.value = cep_json.bairro
     cidade.value = cep_json.localidade
     estado.value = cep_json.uf
+   
+}
+
+function apagar_campo(){
+    
+
+    let rua = document.getElementById("rua")
+    let bairro = document.getElementById("bairro")
+    let cidade = document.getElementById("cidade")
+    let estado = document.getElementById("estado")
+
+    rua.value = ""
+    bairro.value = ""
+    cidade.value = ""
+    estado.value = ""
    
 }
