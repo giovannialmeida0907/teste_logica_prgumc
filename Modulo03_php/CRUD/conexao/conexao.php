@@ -1,18 +1,16 @@
-<?php 
-$servername = "localhost"; //ip oou dom do serve
-$username = "root" ; // usuario
-$password = ""; // senha usuario
-$dbname = "teste": // banco
+<?php
 
+    $servername = "localhost"; //ip ou dominio do server
+    $username = "root" ; //usuário no banco de dados
+    $password = ""; //senha do usuário no banco de dados
+    $dbname = "faculdade";
 
-//conexao
-$conn = new mysqli($servername,$username,$password,$dbname);
+    //Cria a conexão
+    $conn = new mysqli($servername, $username, $password,  $dbname );
 
-//ver. cenexao
- 
-if($conn ->connect_error){
-    die("Conexão falhou! (v_v) ");
-}
-
+    //Verificar conexão
+    if ($conn->connect_error){
+        die("Conexão falhou");
+    }
 
 ?>
